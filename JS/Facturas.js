@@ -87,6 +87,7 @@ function CargarFactura(idfactura){
         contentType: 'applicatopn/json',
         success: function(response){
             var MiItems = response;
+            $('#ID').val(MiItems[0].ID);
             $('#NUMERO_FACTURA').val(MiItems[0].NUMERO_FACTURA);
             $('#ID_SOCIO').val(MiItems[0].ID_SOCIO);
             $('#FECHA_FACTURA').val(MiItems[0].FECHA_FACTURA);
